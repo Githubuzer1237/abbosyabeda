@@ -1,6 +1,7 @@
 .branding__wrapper {
    display: flex;
    justify-content: center;
+   
    align-items: center;
    gap: 75px;
    padding-top: 140px;
@@ -8,6 +9,9 @@
    @media (max-width: 1000px) {
       text-align: center;
       flex-direction: column-reverse;
+   }
+   img {
+      width: 100%;
    }
 }
 

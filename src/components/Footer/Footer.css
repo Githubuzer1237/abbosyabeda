@@ -1,0 +1,29 @@
+.footer {
+   background: #f6f6f6;
+}
+
+.footer__wrapper {
+   margin-top: 140px;
+   display: flex;
+   padding: 105px 123px 144px ;
+   flex-wrap: wrap;
+   gap: 178px;
+   h3 {
+      color: #000;
+   }
+   p {
+      color: #272d38;
+   }
+
+   .dev {
+      display: flex;
+      flex-direction: column;
+      gap: 11px;
+   }
+
+   @media (max-width: 1260px) {
+      text-align: center;
+      justify-content: center;
+      
+   }
+}

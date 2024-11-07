@@ -1,20 +1,23 @@
-.custome__wrapper {
+.part__wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
    gap: 75px;
-   padding-top: 140px;
+   border-radius: 20px;
    flex-wrap: wrap;
+   background: #f6f6f6;
    @media (max-width: 1000px) {
       text-align: center;
+      padding-bottom: 80px;
    }
 
    img {
       width: 100%;
    }
+
 }
 
-.pon2 {
+.pon {
    display: flex;
    flex-direction: column;
    @media (max-width: 1000px) {
@@ -26,12 +29,19 @@
    h2 {
       font-family: var(--font-family);
 font-weight: 700;
-font-size: 64px;
+font-size: 44px;
 line-height: 100%;
 text-transform: capitalize;
 color: #272d38;
-width: 100%;
    }
 
+   .part__btn {
+      border-radius: 8px;
+width: 167px;
+height: 48px;
+color: #fff;
+background-color:  #8eadd5;
+border: none;
 
+   }
 }
