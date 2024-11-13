@@ -1,24 +1,30 @@
 import React from 'react'
 import './App.css'
-import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Trusted from './components/Trusted/Trusted'
-import Branding from './components/Branding/Branding'
-import Custome from './components/Custome/Custome'
-import Test from './components/Testimonials/Test'
-import Part from './components/Part/Part'
+import Home from './pages/Home'
+import About from './pages/About'
+import Testimonials from './pages/Testimonials'
+import Contact from './pages/Contact'
 import Footer from './components/Footer/Footer'
+import Header from './components/Header/Header'
+
+import { Route, Routes } from 'react-router-dom'
 const App = () => {
   return (
     <>
-     <Header />
-     <Hero />
-     <Trusted />
-     <Branding />
-     <Custome />
-     <Test/>
-     <Part />
-     <Footer />
+     
+
+
+
+   <Header />
+     <Routes>
+      <Route path="/" element={<Home/>} />
+      <Route path="/about" element={<About/>} />
+      <Route path="/testimonials" element={<Testimonials/>} />
+      <Route path="/contact" element={<Contact/>} />
+
+      
+    </Routes>
+    <Footer />
     </>
   )
 }

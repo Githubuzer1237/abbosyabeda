@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css'
+import { Link } from 'react-router-dom'
 const Header = () => {
 const [active, setActive] = useState(false)
 
@@ -17,10 +18,10 @@ const toggleBurger =() => {
         <img className='logo' src="/logo.png" alt="" />
 
         <div  className={`header__menu ${active ? 'active' : ''}`}  >
-            <a href="">Home</a>
-            <a href="">About</a>
-            <a href="">Testimonials</a>
-            <a href="">Contact</a>
+            <Link to="/">Home</Link>
+            <Link to="/about">About</Link>
+            <Link to="/testimonials">Testimonials</Link>
+            <Link to="/contact">Contact</Link>
         </div>
         <div onClick={toggleBurger} className={`burger ${active ? 'active' : ''}`}>
             <span></span>
